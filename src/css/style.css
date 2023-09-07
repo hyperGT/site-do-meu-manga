@@ -22,7 +22,7 @@ header {
   text-align: center;
 }
 
-.center {
+.manga-page{
   min-width: 614px;
   width: calc(100% - 300px);
   height: 800px;
@@ -31,16 +31,28 @@ header {
   background-color: #404040;
 }
 
+.center {
+  background-color: aliceblue;
+  width: 100%;
+  height: 40%;
+}
+
 .manga-img-container {
   width: 270px;
   height: 360px;
   float: left;
   background: url(../images/one-piece-capa.png);
-  background-color: aquamarine;
+  /*background-color: aquamarine;*/
   background-size: contain;
   position: relative;
   margin: 3.333%;
   border: 3px solid #a6a6a6;
+}
+
+.content-area{
+  width: 100%;
+  height: 150px;    
+  background-color: aqua;
 }
 
 .series-title {
@@ -52,8 +64,7 @@ header {
 .series-title h1 {
   font-weight: normal;
   font-size: 33px;
-  color: white;
-  
+  color: white;  
 }
 
 .tags {
@@ -75,8 +86,8 @@ header {
   text-align: center;  
   margin-top: 8px;
   margin-right: 6px;
-  margin-bottom: 10px;
-  padding: 5px;
+  margin-bottom: 50px;
+  padding: 5px;  
 }
 
 .tags .more {
@@ -88,21 +99,24 @@ header {
   color: #494949;
 }
 
-.desc {
-  width: calc(100% - 20%);
-  height: 100px;
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.series-desc {  
-  width: 780px;  
-  height: 90px;
-  display: block;
-  text-align: justify;  
+
+.desc {  
+  width: 780px;
+  height: 230px;  
+  background-color: yellowgreen;
 }
 
-.series-desc span {
-  margin-top: 10px;
-}
+
+
+
+
+
 
 
 
